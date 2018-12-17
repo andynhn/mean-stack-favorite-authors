@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Add a New Favorite Author</h2>
+  <p><a><button [routerLink]="['/']" class="buttonCancel">Cancel</button></a></p>
+  <p class="error" *ngIf="errors.repeat">{{errors.repeat.message}}</p>
+  <form (submit)="createAuthor()">
+    <p>
+      <input type="text" name="author.name" [(ngModel)]="author.name" placeholder="name" size="40px">
+    </p>
+    <p class="error" *ngIf="errors.name">{{errors.name.message}}</p>
+    <p>
+      <input type="submit" value="Add a New Author" class="buttonSubmit"><span></span>
+    </p>
+  </form>
+  <!-- {{ author | json }} -->
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Edit this Author</h2>
+  <p>
+    <a><button [routerLink]="['/']" class="buttonCancel">Cancel</button></a>
+  </p>
+  <p class="error" *ngIf="errors.repeat">{{errors.repeat.message}}</p>
+  <form (submit)="updateAuthor(author._id)">
+    <p>
+      <input type="text" name="author.name" [(ngModel)]="author.name" placeholder="name" size="40px">
+    </p>
+    <p class="error" *ngIf="errors.name">{{errors.name.message}}</p>
+    <p>
+      <input type="submit" value="Update Author" class="buttonSubmit"><span></span>
+    </p>
+  </form>
+  <!-- {{ author | json }} -->
+</div>

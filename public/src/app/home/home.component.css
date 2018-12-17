@@ -1,0 +1,63 @@
+.button {
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#authors {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#authors td, #authors th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#authors tr:nth-child(even){background-color: #f2f2f2;}
+
+/* #authors tr:hover {background-color: #ddd;} */
+
+#authors th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.buttonDelete {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonUpdate {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
